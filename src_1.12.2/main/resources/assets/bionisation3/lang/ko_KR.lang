@@ -2,9 +2,9 @@ itemGroup.Bionisation = Bionisation 3
 
 tile.blockherbalstation.name = 허브 스테이션
 tile.blockdisinfector.name = 소독기
-tile.blockvaccinecreator.name = 백신 작성기
-tile.blockdnaformer.name = DNA 생성기
-tile.blockvirusreplicator.name = 바이러스 복제기
+tile.blockvaccinecreator.name = 백신 제조기
+tile.blockdnaformer.name = DNA 분석기
+tile.blockvirusreplicator.name = 바이러스 제조기
 tile.garlic.name = 마늘
 tile.dill.name = 허브
 tile.yarrow.name = 국화꽃
@@ -14,9 +14,9 @@ tile.desertflower.name = 사막의 꽃
 tile.ancientflower.name = 고대 꽃
 tile.lotus.name = Lotus
 tile.livingbone.name = 살아있는 뼈
-tile.crystalflower.name = 크리스탈 플라워
+tile.crystalflower.name = 크리스탈 꽃
 
-item.garlicbulb.name = 외톨 마늘
+item.garlicbulb.name = 마늘 추출물
 item.dillseed.name = 허브 씨앗
 item.dillbunch.name = 허브 덤불
 item.yarrowseed.name = 국화 씨앗
@@ -59,14 +59,14 @@ item.guidebook.name = 가이드 북
 inventory.disinfector.name = 소독기
 inventory.dnaformer.name = DNA 분석기
 inventory.herbalstation.name = 허브 스테이션
-inventory.vaccinecreator.name = 백신 작성자
-inventory.virusreplicator.name = 바이러스 복제기
+inventory.vaccinecreator.name = 백신 제조기
+inventory.virusreplicator.name = 바이러스 제조기
 
 tooltip.creativevial.sample = 샘플 :
 tooltip.creativevial.id = ID :
 tooltip.creativevial.type = 유형 :
-tooltip.creativevial.power = 전원 :
-tooltip.creativevial.duration = 기간 :
+tooltip.creativevial.power = 파괴력 :
+tooltip.creativevial.duration = 지속시간 :
 tooltip.creativevial.infinite = 무한
 tooltip.creativevial.sec = 초
 
@@ -77,8 +77,8 @@ tooltip.type.symbiosis = 공생
 tooltip.type.bacteria_cure = 박테리아 치료법
 tooltip.type.virus_cure = 바이러스 치료
 tooltip.type.effect_cure = 효과 치료
-tooltip.type.custom_virus = 사용자 지정 바이러스
-tooltip.type.symbiont = Symbiont
+tooltip.type.custom_virus = 커스텀 바이러스
+tooltip.type.symbiont = 공생관계
 
 tooltip.effect.bleeding = 출혈
 tooltip.effect.cold = 감기
@@ -86,23 +86,23 @@ tooltip.effect.fatigue = 피로
 tooltip.effect.food_poisoning = 식중독
 tooltip.effect.fracture = 골절
 tooltip.effect.immunity = 내성
-tooltip.effect.internal_bleeding = 내부 출혈
+tooltip.effect.internal_bleeding = 내출혈
 tooltip.effect.lack_of_blood = 빈혈
 tooltip.effect.sunstroke = 일사병
 tooltip.effect.big_green_bacteria = 큰 녹색 박테리아
 tooltip.effect.black_bacteria = 검은 박테리아
-tooltip.effect.bone_bacteria = 뼈 세균
+tooltip.effect.bone_bacteria = 뼈 박테리아
 tooltip.effect.cactus_bacteria = 선인장 박테리아
-tooltip.effect.clone_bacteria = 박테리아 복제
+tooltip.effect.clone_bacteria = 클론 박테리아
 tooltip.effect.ender_bacteria = 엔더 박테리아
 tooltip.effect.glowing_bacteria = 빛나는 박테리아
-tooltip.effect.mycelium_bacteria = 균사 균
+tooltip.effect.mycelium_bacteria = 균사 박테리아
 tooltip.effect.sea_bacteria = 바다 박테리아
 tooltip.effect.small_green_bacteria = 작은 녹색 박테리아
 tooltip.effect.swamp_bacteria = 늪 박테리아
 tooltip.effect.tera_bacteria = 테라 박테리아
-tooltip.effect.water_bacteria = 물 세균
-tooltip.effect.aer_virus = Aer 바이러스
+tooltip.effect.water_bacteria = 물 박테리아
+tooltip.effect.aer_virus = 공기 바이러스
 tooltip.effect.bat_virus = 박쥐 바이러스
 tooltip.effect.blood_virus = 블러드 바이러스
 tooltip.effect.brain_virus = 두뇌 바이러스
@@ -112,92 +112,91 @@ tooltip.effect.ender_virus = 엔더 바이러스
 tooltip.effect.giant_virus = 자이언트 바이러스
 tooltip.effect.ocean_virus = 해양 바이러스
 tooltip.effect.polar_virus = 폴라 바이러스
-tooltip.effect.ptero_virus = Ptero 바이러스
+tooltip.effect.ptero_virus = 조류 바이러스
 tooltip.effect.rabies = 광견병
 tooltip.effect.red_virus = 레드 바이러스
-tooltip.effect.skull_virus = 해골 바이러스
-tooltip.effect.wither_virus = 웜 바이러스
+tooltip.effect.skull_virus = 스컬 바이러스
+tooltip.effect.wither_virus = 위더 바이러스
 tooltip.effect.ap_symbiosis = AP 공생
 tooltip.effect.ew_symbiosis = EW 공생
 tooltip.effect.ov_symbiosis = OV 공생
 tooltip.effect.rs_symbiosis = RS 공생
 
-tooltip.garlicbulb = 2 개의 면역 레벨을 회복합니다.
+tooltip.garlicbulb = 면역력이 2 회복됩니다.
 
 tooltip.cure = 치료법 :
 
 tooltip.gene.gene = 유전자 :
 
-tooltip.gene.1 = 스피드 진
-tooltip.gene.2 = 천천히 진 유전자
-tooltip.gene.3 = 진원 유전자
+tooltip.gene.1 = 스피드 유전자
+tooltip.gene.2 = 슬로우 유전자
+tooltip.gene.3 = 성급한 유전자
 tooltip.gene.4 = 피로 유전자
-tooltip.gene.5 = 힘 진 유전자
-tooltip.gene.6 = 건강 증진 유전자
-tooltip.gene.7 = 점프 진
+tooltip.gene.5 = 힘 유전자
+tooltip.gene.6 = 체력 증가 유전자
+tooltip.gene.7 = 점프 유전자
 tooltip.gene.8 = 메스꺼움 유전자
 tooltip.gene.9 = 재생성 유전자
 tooltip.gene.10 = 저항 유전자
 tooltip.gene.11 = 내화성 유전자
 tooltip.gene.12 = 물 호흡 유전자
-tooltip.gene.13 = 보이지 않는 유전자
+tooltip.gene.13 = 투명 유전자
 tooltip.gene.14 = 실명 유전자
-tooltip.gene.15 = 야간 투시경 유전자
-tooltip.gene.16 = 헝거 유전자
+tooltip.gene.15 = 야간 투시 유전자
+tooltip.gene.16 = 배고픔 유전자
 tooltip.gene.17 = 약점 유전자
 tooltip.gene.18 = 독 유전자
-tooltip.gene.19 = 유전자를 쇠약하게합니다.
+tooltip.gene.19 = 위더 유전자
 tooltip.gene.20 = 흡수 유전자
 tooltip.gene.21 = 포화 유전자
 tooltip.gene.22 = 빛나는 유전자
-tooltip.gene.23 = 공중 부양
+tooltip.gene.23 = 공중 부양 유전자
 tooltip.gene.24 = 행운의 유전자
 tooltip.gene.25 = 재수없는 유전자
 tooltip.gene.26 = 화난 유전자
-tooltip.gene.27 = 광견병 진
-tooltip.gene.33 = 불타는 진
+tooltip.gene.27 = 광견병 유전자
+tooltip.gene.33 = 불타는 유전자
 tooltip.gene.34 = 폭발 유전자
 tooltip.gene.35 = 순간 이동 유전자
 tooltip.gene.28 = 평화로운 유전자
-tooltip.gene.29 = 어택트 진
+tooltip.gene.29 = 공격 유전자
 tooltip.gene.30 = 상처받은 유전자
-tooltip.gene.31 = 데스 진
-tooltip.gene.32 = 에어 진
-tooltip.gene.36 = 변이 유전자
+tooltip.gene.31 = 데스 유전자
+tooltip.gene.32 = 에어 유전자
+tooltip.gene.36 = 돌연변이 유전자
 
-tooltip.empty = 비움
+tooltip.empty = Empty
 
 tooltip.dna = 구현 된 유전자 :
 
-tooltip.immunity = 면제 :
+tooltip.immunity = 면역력 :
 tooltip.blood = 피 :
-
 tooltip.symbiontvial.symbiont = Symbiont :
 
 tooltip.symbiontvial.150 = 힘의 상징
 tooltip.symbiontvial.151 = 저항의 상징
 tooltip.symbiontvial.152 = 이동성의 상징
-tooltip.symbiontvial.153 = 진정한 비전의 상징
-tooltip.symbiontvial.154 = 마법 친화의 상징
-tooltip.symbiontvial.155 = 시들지 않는 눈의 상징
-tooltip.symbiontvial.156 = 면제의 상징
+tooltip.symbiontvial.153 = 트루 비전의 상징
+tooltip.symbiontvial.154 = 마법 친화력의 상징
+tooltip.symbiontvial.155 = 활기잃은 눈의 상징
+tooltip.symbiontvial.156 = 면역력의 상징
 tooltip.symbiontvial.157 = 피의 상징
-tooltip.symbiontvial.158 = 건강의 상징
-tooltip.symbiontvial.159 = 효과 힘의 상징
+tooltip.symbiontvial.158 = 체력 상징
+tooltip.symbiontvial.159 = 이펙트 파워의 상징
 tooltip.symbiontvial.160 = 건강한 위장의 상징
-tooltip.symbiontvial.161 = 삐걱 거리는 영혼의 상징
-tooltip.symbiontvial.162 = 블레이즈 하트의 상징
+tooltip.symbiontvial.161 = 크리퍼 영혼의 상징
+tooltip.symbiontvial.162 = 블레이즈 심장의 상징
 tooltip.symbiontvial.164 = 영혼의 상징
 tooltip.symbiontvial.165 = 골렘 파워의 상징
 tooltip.symbiontvial.166 = 물 친화력의 상징
 tooltip.symbiontvial.167 = 흡혈의 상징
-
+ 
 tooltip.injector.vaccine = 백신 :
 tooltip.injector.dna = DNA :
-tooltip.injector.stable = 안정
-tooltip.injector.unstable = 불안정합니다.
+tooltip.injector.stable = 안정됨
+tooltip.injector.unstable = 불안정함
 
-tooltip.vial.samples = 샘플 :
+tooltip.vial.samples = 샘플
 tooltip.vial.dna = DNA :
 
 checker.message.version = 새 버전의 Bionisation 3가 있습니다
@@ -205,15 +204,15 @@ checker.message.av = 사용할 수 있습니다.
 checker.message.changes = 변경 사항 :
 checker.message.cant = Bionisation 3에 대한 업데이트를 확인할 수 없습니다.
 
-tooltip.infected = 감염 됨
+tooltip.infected = 감염됨
 
 jei.time = 시간 :
 
 jei.randomdna = 무작위 DNA
 
-tooltip.guidebook = 마음을여십시오!
+tooltip.guidebook = 당신의 마인드를 오픈하세요!
 
-book.tooltip.mechanics = 역학
+book.tooltip.mechanics = 기계들
 book.tooltip.ingredients = 허브 및 성분
 book.tooltip.effects = 효과
 book.tooltip.bacteria = 박테리아
@@ -223,30 +222,30 @@ book.tooltip.symbionts = Symbionts
 book.tooltip.mechanisms = 메커니즘
 book.tooltip.other = 기타
 
-book.page.0 = §4Bionisation 3 연구 노트 .NL§0이 책에서는 mod. NLNLNLT에 대한 모든 필요한 정보를 찾을 수 있습니다.이 모드를 사용해 주셔서 감사합니다! 행운을 빌고 재미있게 보내!
-초기 게임에서는 감염된 Forest Biome을 피하십시오. 왜냐하면 많은 나쁜 영향을받을 수 있기 때문입니다. 비어있는 손으로 거미, 엔더, 지뢰를 치지 마십시오. 그렇지 않으면 검은 색 또는 테라 박테리아가 생깁니다.
-book.page.2 = §2 이른바 gameNL00 폭도들로부터 보호받는 집을 짓고, 특히 삐걱 거리는 사람들로부터 보호하십시오. 예를 들어 높은 벽으로 집을 감쌀 수 있습니다. 사막 생물학에서는 일사병 효과를 피하기 위해 헬멧을 착용하십시오. 높은 곳에서 뛰어 오르지 마라.
-book.page.3 = §2 조심성있는 게임 NL0 모든 약초, 꽃과 재료 (몹들이 떨어지는 물)를 모아서 치료제를 준비하는 데 유용합니다. 면역 수준이 80보다 낮고 콜드 바이오 메 (cold biomes) 상태 인 경우, 완전한 방어구 세트를 착용하십시오.
-book.page.4 = §2 조기 게임 NL§0 마늘 전구 1 개가 면역력을 회복 할 수 있기 때문에 마늘은 이제 가장 친한 친구입니다. 그러므로 높은 면역력을 유지하고 이상한 몹이나 몹을 피해야합니다. 왜냐하면 일부 바이러스는 공기, 공격 등을 통해 확산 될 수 있기 때문입니다.
+book.page.0 = §4Bionisation 3 연구 노트 .NL§0이 책에서는 mod. NLNLNLT에 대한 모든 필요한 정보를 찾을 수 있습니다.이 모드를 사용해 주셔서 감사합니다! 너님의 목숨에 행운을 빌고 재미있게 즐겨주세요!
+book.page.1 = §2Early gameNL§0 감염된 Forest Biome을 피하십시오. 왜냐하면 나쁜 영향을 많이 받을수 있기 때문입니다. 맨손으로 거미, 엔더맨을 떄리거나 땅을 파지 마십시오. 그렇지 않으면  검은 Or 테라 박테리아가 생깁니다.
+book.page.2 = §2Early gameNL§0 폭도들로부터 살아남을수 있는 집을 짓고, 특히 크리퍼 로부터 살아남으십시오.(감염된 적은 더더욱 위헙합니다.) 예를 들어 높은 벽으로 집을 감쌀 수 있습니다. 사막 바이옴에서는 일사병을 피하기 위해 헬멧을 착용하십시오. 높은 곳에서 떨어지지 마세요.(뼈가 부러져요.)
+book.page.3 = §2Early gameNL§0 모든 약초, 꽃과 재료(몹들이 주는 아이탬)는 모아서 치료제를 만드는데 유용하게 쓰입니다. 면역력이 80보다 낮고 추운 바이옴 (cold biomes) 상태 인 경우, 방어구 세트를 풀세트 착용해야합니다.안그러면 감기걸려요. 에취.
+book.page.4 = §2Early gameNL§0 마늘 추출물은 섭취할시 면역력을 회복 할 수 있기 때문에 마늘은 플레이어의 친구랍니다. 심어서 재배합시다. 그리고 높은 면역력을 유지하고 이상한 몹은 피해야합니다. 왜냐하면 일부 바이러스는 공기, 공격 등을 통해 전염 될 수 있기 때문입니다.
 
-면밀한 수준은 바이러스와 박테리아의 힘을 결정합니다. 면역 수준이 낮을수록 효과가 강합니다. 면역력이 약하면 추가 효과를 얻을 수 있습니다. 현재 면역 수준을 얻으려면 면역 수신기를 사용하십시오.
-book.page.6 = §4 블러드 레벨 NL§0 블러드 레벨은 당신의 피입니다. 출혈, 내부 출혈, 골절 등으로 감소 할 수 있습니다. 플레이어의 혈중 농도가 30보다 낮 으면 사망 할 수 있습니다. 피는 수동적으로 재생성됩니다.
-book.page.7 = §4 감염된 아이템 NL§0 'dangeous'수정자를 사용하여 바이러스 나 박테리아가 발견되면 아이템도 감염 될 수 있습니다. 따라서 다른 플레이어 나 착용자가 착용하면이 효과를 다시 얻을 수 있습니다. 감염된 항목은 '감염 됨'으로 표시됩니다.
-book.page.8 = §4 감염된 아이템 NL§0 특정 바이러스 나 박테리아에 대한 백신이나 치료약을 성공적으로 사용한 경우,이 효과는 재고 목록의 모든 항목에서 제거됩니다. Disinfector 메커니즘을 사용하여 항목을 감염으로부터 제거하십시오.
-book.page.9 = §4 감염된 품목 NL§0 치료와 예방 접종을 준비하는 것은 일반적으로 소독기의 항목을 지우는 것보다 빠릅니다. 가득 차있는 바이오 복장은 감염으로부터 당신을 보호 할 수 있습니다. 그래서이 복장에서 위험없이 감염된 물건을 보관할 수 있습니다.
+book.page.5 = §4 면역력NL§0면역력은 바이러스와 박테리아의 힘을 결정합니다. 면역 수준이 낮을수록 효과가 강합니다. 면역력이 약하면 추가 효과를 얻을 수 있습니다. 현재 면역 수준을 확인하려면 면역 수신기를 사용하십시오.
+book.page.6 = §4 블러드 레벨 NL§0 블러드 레벨은 당신의 피입니다. 출혈, 내출혈, 골절 등으로 감소 할 수 있습니다. 플레이어의 혈중 농도가 30보다 낮 으면 사망 할 수 있습니다. 피는 자연적으로 재생성됩니다.
+book.page.7 = §4 감염된 아이템 NL§0 박테리아,바이러스에 플레이어가 감염되면 아이템도 감염 될 수 있습니다. 따라서 다른 플레이어나 자신이 감염된 아이탬을 가지고있으면 그 질병에 감염될수 있습니다. 감염된 아이탬은 '감염됨'으로 표시됩니다.
+book.page.8 = §4 감염된 아이템 NL§0 특정 바이러스,박테리아에 대한 백신이나 치료약을 성공적으로 사용한 경우,이 효과는 재고 목록의 모든 항목에서 제거됩니다. 소독기를 사용하여 감염된 아이탬을 감염으로부터 제거하십시오.
+book.page.9 = §4 감염된 품목 NL§0 치료와 예방 접종을 준비하는 것은 일반적으로 소독기로 감염된 아이탬을 지우는 것보다 빠릅니다. 풀셋 바이오 복장은 감염으로부터 당신을 보호 할 수 있습니다. 그래서이 복장에서 위험없이 감염된 물건을 보관할 수 있습니다.
 
-book.page.10 = §4 약과 재료들 NL§0 세계에서 찾을 수있는 허브 종류는 10 종류 있습니다. NLHerbs : NLGarlic (모든 곳), Dill (차가운 생물 군 제외), Yarrow (차가운 생물 군), Lotus 바다 등),
-book.page.11 = 크리스탈 플라워 (콜드 바이오 메스), Ender flower (도처에), Phoenix flower (지옥), Desert flower (사막 생물 지구), 고대 꽃 (도처), Living Bone (도처).
-book.page.12 = 성분은 치료, 백신 등을 위해 사용됩니다. NLIngredients : NLBat 날개 (박쥐에서), 늑대 치아 (늑대 출몰), 혈액 튜브 (버려진 실험실에서 생성 됨), 분광 분광
-book.page.13 = 거미 다리 (거미들로부터), Ender core (제작), 어두운 마음 (시들어가는 뼈대로부터), 보호자 뇌 (보호자 출신), 빛나는 액체 (제작), 이상한 액체 (마녀 출신), Blaze 코어 (블레이즈에서), 크리퍼 하트 (크리퍼에서),
-book.page.14 = Endermans and endermites의 Ender substance, 닭의 닭 머리, Gene Vial (버려진 실험실에서 생성) .NLAlso 또한 버려진 실험실 지하 감옥에서 모든 재료를 찾을 수 있습니다.
+book.page.10 = §4 약과 재료들 NL§0 세계에서 찾을 수있는 허브 종류는 10 종류 있습니다. NL허브 : NL마늘 (모든 곳), 허브 (추운 바이옴을 제외한 모든곳), 국화꽃 (추운 바이옴), Lotus (바다 등),
+book.page.11 = 크리스탈 꽃 (추운 바이옴), 엔더 꽃 (모든곳), 피닉스 꽃 (지옥), 사막 꽃 (사막 바이옴), 고대 꽃 (모든곳), 살아있는 뼈 (모든곳).
+book.page.12 = 이것들은 치료제, 백신 등을 만들때 사용됩니다. NLIngredients : NL박쥐 날개 (박쥐가 드랍), 늑대 치아 (늑대가 드랍), 혈액 튜브 (버려진 실험실에서 생성 됨), 분광 분광
+book.page.13 = 거미 다리 (거미가 드랍), Ender core (제작), 어두운 마음 (위더 스켈레톤이 드랍), 가디언 뇌 (가디언이 드랍), 빛나는 액체 (제작), 이상한 액체 (마녀가 드랍), 블레이즈 코어 (블레이즈가 드랍), 크리퍼 심장 (크리퍼가 드랍),
+book.page.14 = 엔더정수(엔더맨이 드랍), 닭대가리 (닭이 드랍), 유전자 유리병 (버려진 실험실에서 나옴).NLAlso 또한 버려진 실험실 지하 감옥에서 모든 재료를 찾을 수 있습니다.
 
 book.page.15 = §4EffectsNL§0 플레이어가 오픈 월드에서 얻을 수있는 정규 효과.
-book.page.16 = §4 출혈 N§1 이유 : §0 들어오는 damageNL§1 효과 : §0 약점과 천천히, 2 초마다 15 초. 희생자는 피의 흔적을 남깁니다 .NL§1Cure : 붕괴를 막기 위해 붕대를 사용하십시오.
-book.page.17 = §4 내부 출혈 NL§1 이유 : §0 다양한 바이러스와 박테리아 .NL§1 효과 : §0 약점과 천천히, 2 회마다 15 초 .NL§1 치료 : §0 물병 + 연꽃 + 얼룩덜룩 한 멜론 초본 역.
+book.page.16 = §4 출혈 N§1 이유 : §0 데미지를 받게됨.NL§1 효과 : §0 약해지고 느려짐. 매 15초마다 피 레벨이 2씩 감소. 출혈은 바닥에 피의 흔적을 남깁니다 .NL§1치료법 : 출혈을 막기 위해 붕대를 사용하십시오.
+book.page.17 = §4 내출혈 NL§1 이유 : §0 다양한 바이러스와 박테리아 .NL§1 효과 : §0 약해지고 느려짐., 매 15초마다 피레벨이 2씩 감소 .NL§1 치료 : §0 물병 + lotus + 얼룩덜룩 한 멜론 초본 역.
 book.page.18 = §4SunstrokeNL§1 이유 : §0 헬멧이없는 사막에서 .NL§1 효과 : §0 메스꺼움, 광산 피로 .NL§1Cure : §0 마실 것.
 book.page.19 = §4ColdNL§1 이유 : §0 면역력이 80 미만이고 방어구가없는 차가운 생물 군집 .NL§1 효과 : §0 매 20 초마다 약한 구역 .NL§1 치료 : §0 물병 + Yarrow bunch 허벌 역에서.
-book.page.20 = §4FatigueNL§1Reason : §0 Immunity <30NL§1 효과 : §0 약점, 아이템을 손에 쥐지 못함 .NL§1Cure : §0 Immunity> 30.
+book.page.20 = §4FatigueNL§1Reason : §0 Immunity <30NL§1 효과 : §0 약점, 아이템을 손에 쥐지 못함 .NL§1Cure : §0 면역력> 30.
 돼지 독감과 썩은 고기 100 퍼센트, 돼지 고기, 쇠고기, 토끼, 닭고기, 양고기, 거미 눈, 생선, 감자, 당근, 비트 뿌리 .NL§1 효과 : §0 독 메스꺼움.
 book.page.22 = §1Cure : § 0 물병 + 허벌 스테이션의 딜 뭉치.
 book.page.23 = §4FractureNL§1 이유 : §0 낙하로 인한 피해. 골절이 이미 활발하다면 출혈도 있습니다 .NL§1 효과 : §0 느려짐 .NL§1 큐어 : §0 10 분 기다림.
